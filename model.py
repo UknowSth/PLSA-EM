@@ -173,8 +173,8 @@ class PLSA:
             data.append(D)
         fig, axes = plt.subplots(nrows=int((self.K+1)/2), ncols=2, figsize=(20,40))
         # font_path='./simsun.ttc'
-        font_path = './msyh.ttc'
-        mask = np.array(plt.imread('./graph.webp'))
+        font_path = './assets/msyh.ttc'
+        mask = np.array(plt.imread('./assets/graph.webp'))
         for i in range(self.K):
             row, col = divmod(i, 2)
             words = data[i] # min_font_size=25, max_font_size=50
